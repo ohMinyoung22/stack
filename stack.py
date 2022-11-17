@@ -11,7 +11,6 @@ class Stack:
         # 1. 현재 아이템을 넣을 수 있는 상황인지 확인
 
         if self.count() >= self.maxCount:
-            print("더 이상 아이템을 넣을 수 없습니다")
             return False
 
 
@@ -27,7 +26,7 @@ class Stack:
     def pop(self):
         # 1. 현재 아이템을 제거할 수 있는 상황인지 확인
         if self.count() < 1:
-            return -1 # 진짜로 -1이라는 수가 있었다면?
+            return -1 
 
         # 3. ptr을 1 감소하여 다음에 넣을 아이템의 index 갱신
         self.ptr -= 1
